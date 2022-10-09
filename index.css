@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.h2_hover_effect:hover, li:hover{
+    animation-name: hover_effect;
+    animation-duration: 0.1s;
+    animation-timing-function: ease-in;
+    border-bottom: solid 10px;
+    border-radius: 25px;
+}
+
+@keyframes hover_effect {
+    from {border-bottom: 0px;}
+    to {border-bottom: solid 10px;}
+}
+
+
+ul, li, a{
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    padding: 10px 20px 10px 20px;
+}
+
+footer{
+    background-color: black;
+    padding: 100px;
+}
